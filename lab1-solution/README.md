@@ -15,10 +15,15 @@ docker run -d --name redisHostPort -p 6379:6379 redis:latest
 ```
 docker run -d --name redisDynamic -p 6379 redis:latest
 docker port redisDynamic 6379
+docker ps
 ```
 ### Step 5
 ```
-mkdir $PWD/data  
 docker run -d --name redisMapped -v "$PWD/data":/data redis  
 docker inspect -f  '{{.Mounts}}' redisMapped 
 ``` 
+### Step 6
+```
+$ docker run ubuntu ps
+$ docker run -it ubuntu bash
+```
