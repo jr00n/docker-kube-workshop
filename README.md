@@ -1,1 +1,1 @@
-# docker-kube-workshop
+# Docker / Kubernetes Workshop TechDays 2019
